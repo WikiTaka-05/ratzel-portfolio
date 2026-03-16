@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Profile of Ratzel A. - Full Stack Web Developer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating Particles -->
+    <div class="particles" id="particles"></div>
+
+    <div class="container">
+        <header>
+            <div class="Image"> <img src="profile.png" alt="Profile Image"> </div>
+            <div class="hero">
+                <h1 id="heroName">Ratzel A. Avendaño</h1>
+                <div class="typing-effect" id="typingText">
+                    Web Design & Full Stack Web Developer & IT Specialist<span class="typing-cursor"></span>
+                </div>
+                <div class="contact-info">
+                    <a href="mailto:ratzelabel@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i> ratzelabel@gmail.com
+                    </a>
+                    <a href="tel:+1234567890" class="contact-item">
+                        <i class="fas fa-phone"></i> +58 412-012-0872
+                    </a>
+                    <a href="https://www.linkedin.com/in/ratzel-avenda%C3%B1o-1b6a60293/" target="_blank" class="contact-item">
+                        <i class="fab fa-linkedin-in"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <button class="nav-btn active" data-section="about"><i class="fas fa-user"></i> About</button>
+            <button class="nav-btn" data-section="skills"><i class="fas fa-code"></i> Skills</button>
+            <button class="nav-btn" data-section="experience"><i class="fas fa-briefcase"></i> Experience</button>
+            <button class="nav-btn" data-section="projects"><i class="fas fa-project-diagram"></i> Projects</button>
+            <button class="nav-btn" data-section="contact"><i class="fas fa-envelope"></i> Contact</button>
+        </nav>
+
+        <!-- Sections remain the same structure but with enhanced animations -->
+        <section id="about" class="section active">
+            <h2><i class="fas fa-user"></i> About Me</h2>
+            <p style="text-align: center; font-size: 1.3em; max-width: 900px; margin: 0 auto 40px; opacity: 0; animation: fadeInUp 1s 0.5s forwards;">
+                Passionate Full Stack Web Developer with expertise in modern web technologies, server management, 
+                and wireless infrastructure. I create stunning, responsive websites that deliver exceptional user experiences.
+            </p>
+            <div style="text-align: center;">
+                <a href="#contact" class="btn" onclick="showSection('contact')">
+                    <i class="fas fa-rocket"></i> Let's Work Together
+                </a>
+                <a href="#" class="btn" download>
+                    <i class="fas fa-file-download"></i> Download CV
+                </a>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <h2><i class="fas fa-briefcase"></i> Experience</h2>
+            <div class="experience-item" style="opacity: 0; animation: fadeInUp 1s 0.5s forwards;">
+                <h3>Full Stack Web Developer - Freelance</h3>
+                <p><strong>2020 - Present</strong></p>
+                <ul>
+                    <li>Designed and developed responsive websites for clients across various industries.</li>
+                    <li>Implemented modern web technologies such as React, Node.js, and MongoDB.</li>
+                    <li>Managed server infrastructure and optimized website performance.</li>
+                </ul>
+            </div>
+            <div class="experience-item" style="opacity: 0; animation: fadeInUp 1s 0.7s forwards;">
+                <h3>IT Specialist - Tech Solutions Inc.</h3>
+                <p><strong>2018 - 2020</strong></p>
+                <ul>
+                    <li>Provided technical support and managed IT infrastructure for a mid-sized company.</li>
+                    <li>Implemented wireless networks and ensured cybersecurity measures were in place.</li>
+                    <li>Collaborated with cross-functional teams to improve IT processes and systems.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+            <div class="project-item" style="opacity: 0; animation: fadeInUp 1s 0.5s forwards;">
+                <h3>Personal Portfolio Website</h3>
+                <p>Designed and developed a personal portfolio website to showcase my skills and projects. Built with React and hosted on Netlify.</p>
+                <a href="#" class="btn" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> View Project
+                </a>
+            </div>
+            <div class="project-item" style="opacity: 0; animation: fadeInUp 1s 0.7s forwards;">
+                <h3>E-commerce Website</h3>
+                <p>Developed a fully functional e-commerce website for a local business using Node.js, Express, and MongoDB.</p>
+                <a href="#" class="btn" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> View Project
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+            <p style="text-align: center; font-size: 1.3em; max-width: 900px; margin: 0 auto 40px; opacity: 0; animation: fadeInUp 1s 0.5s forwards;">
+                I'm always open to new opportunities and collaborations. Feel free to reach out to me for any inquiries or project discussions.
+            </p>
+            <div style="text-align: center;">
+                <a href="mailto:ratzelabel@gmail.com" class="btn">
+                    <i class="fas fa-envelope"></i> Send Email
+                </a>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2><i class="fas fa-code"></i> Skills</h2>
+            <div class="skills-container">
+                <div class="skill-item" style="opacity: 0; animation: fadeInUp 1s 0.5s forwards;">
+                    <h3>JavaScript</h3>
+                    <p>Proficient in modern JavaScript (ES6+) and various frameworks.</p>
+                </div>
+                <div class="skill-item" style="opacity: 0; animation: fadeInUp 1s 0.7s forwards;">
+                    <h3>React</h3>
+                    <p>Experience building responsive and interactive user interfaces.</p>
+                </div>
+                <div class="skill-item" style="opacity: 0; animation: fadeInUp 1s 0.9s forwards;">
+                    <h3>Node.js</h3>
+                    <p>Skilled in developing scalable server-side applications.</p>
+                </div>
+            </div>
+        </section>
+
+    </div> <!-- /.container -->
+
+    <script>
+        const navButtons = document.querySelectorAll('.nav-btn');
+        const sections = document.querySelectorAll('.section');
+
+        function showSection(sectionId) {
+            sections.forEach(section => {
+                section.classList.toggle('active', section.id === sectionId);
+            });
+            navButtons.forEach(button => {
+                button.classList.toggle('active', button.dataset.section === sectionId);
+            });
+
+            const target = document.getElementById(sectionId);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        navButtons.forEach(button => {
+            button.addEventListener('click', () => showSection(button.dataset.section));
+        });
+    </script>
+
+</body>
+</html>
